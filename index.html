@@ -43,7 +43,9 @@
   .recent{margin-top:18px;font-size:13px;color:var(--muted)}
 
   /* Reader */
-  #reader{position:fixed;inset:0;display:none;flex-direction:column}
+  #reader{position:fixed;inset:0;display:none;flex-direction:column;padding:0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+  .topbar{padding-top:calc(8px + env(safe-area-inset-top)) !important}
+  #welcome{padding-top:calc(24px + env(safe-area-inset-top))}
   #stage{flex:1;display:flex;overflow:auto;-webkit-overflow-scrolling:touch;perspective:2200px;position:relative;touch-action:pan-x pan-y;min-height:0;padding:10px;overscroll-behavior:contain}
   #stage::-webkit-scrollbar{display:none}
   #book{position:relative;display:flex;margin:auto;flex:none;will-change:transform;box-shadow:var(--shadow);background:var(--paper);border-radius:4px;transform-style:preserve-3d}
